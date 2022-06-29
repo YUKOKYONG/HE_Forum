@@ -39,7 +39,7 @@
     <!-- Vue.Draggable (https://github.com/SortableJS/Vue.Draggable) -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/Vue.Draggable/2.23.2/vuedraggable.umd.min.js"></script>
     <link rel="shortcut icon" href="{{ asset('images/logo.png') }}">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     body
     {
@@ -218,6 +218,14 @@
                             <a class="nav-link text-warning" href="{{ route('forum.category.manage') }}">{{ trans('forum::general.manage') }}</a>
                         </li>
                     @endcan
+                    <!--<li class="nav-item">
+                        <div class="input-group rounded">
+                            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                            <span class="input-group-text border-0" id="search-addon">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </li>-->
                 </ul>
                 <ul class="navbar-nav">
                     @if (Auth::check())
